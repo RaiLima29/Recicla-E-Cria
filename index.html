@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recicla e Cria</title>
+
+    <link rel="shortcut icon" href="./src/img/ReciclaECria.png" type="image/x-icon">
+
+    
+
+</head>
+
+<style>
+     body {
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 20px;
+    }
+
+    nav {
+        background-color: #f1f1f1be;
+        padding: 10px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .butnav{
+        background-color: #007900;
+        color: white;
+        padding: 15px 25px;
+        text-decoration: none;
+        border-radius: 15px;
+        margin-left: 20px;
+        font-size: 16px;
+        transition: all 0.3s ease;
+    }
+
+    .butnav:hover{
+        background: linear-gradient(90deg, #1fb927 0%, #1ab41a 100%);
+        scale: 1.3;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.295);
+        transition: 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .navesq {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-grow: 1;
+    }
+
+    .logo {
+        width: 90px;
+        height: 90px;
+        display: block;
+        margin: 0;
+        margin-right: 20px;
+        transition: 0.3s ease;
+    }
+
+    .logo:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
+        filter: drop-shadow(5px 5px 5px rgb(0, 196, 33));
+    }
+
+    .nav-right {
+        display: flex;
+        align-items: center;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        max-height: 900px;
+        padding: 20px;
+    }
+
+    .contEsq {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: start;
+        border-radius: 10px;
+        max-width: 50%;
+        margin: auto;
+    }
+
+    h1 {
+        color: #ffffff;
+        font-size: 3em;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+    }
+
+    p {
+        color: #faf8f8;
+        font-size: 1.2em;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .contfundo {
+        flex: 1;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .imgFundo {
+        margin-top: 20%;
+        margin-bottom: 20%;
+        max-width: 100%;
+        max-height: 100%;
+        size: cover;
+    }
+
+    .fundo {
+        background: linear-gradient(90deg, #89cf68da 0%, #35ac1e 100%);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        position:fixed; 
+        top:0; 
+        left:0; 
+        width:100vw; 
+        height:100vh; 
+        z-index:-1;
+    }
+
+    .butcontent {
+        background-color: #3aff4a;
+        color: white;
+        padding: 15px 25px;
+        text-decoration: none;
+        border-radius: 15px;
+        font-size: 18px;
+        transition: all 0.3s ease;
+        margin-top: 20px;
+        max-width: 150px;
+        text-align: center;
+    }
+
+    .butcontent:hover {
+        background: linear-gradient(90deg, #6eda53 0%, #3ed42b 100%);
+        scale: 1.1;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.295);
+        transition: 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    @media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .contEsq, .fundo {
+        flex: none;
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+        border-radius: 0;
+    }
+
+    .imgFundo {
+        height: 200px; /* Altura menor para caber bem em celular */
+        object-fit: cover;
+    }
+
+    h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1em;
+        text-align: justify;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navdir {
+        margin-top: 10px;
+    }
+
+    .butnav {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+    @media (max-width: 480px) {
+        h1 {
+            font-size: 1.5em;
+        }
+
+        p {
+            font-size: 0.9em;
+        }
+
+        .butcontent {
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="navesq">
+
+                <!-- Logo -->
+                <img src="./src/img/ReciclaECria.png" alt="Logo" class="logo">
+
+            </div>
+
+            <div class="navdir">
+                <!-- Botão de Saiba Mais -->
+                <a href="./SaibaMais.html" class="butnav">Saiba Mais</a>
+
+                <!-- Botão de ideias -->
+                <a href="./ideias.html" class="butnav">Ideias</a>
+            </div>
+        </nav>
+
+        <main>
+            <br><br>
+            <div class="contEsq">
+
+                <h1>Bem-vindo(a) ao Recicla e Cria!</h1>
+                <p>
+                    O Recicla e Cria é uma plataforma dedicada a inspirar, conectar e transformar ideias em ações sustentáveis. Aqui, você descobre maneiras criativas de reutilizar materiais, aprende sobre reciclagem e compartilha seus próprios projetos ecológicos com uma comunidade engajada.
+                    <br><br>
+                    Nossa missão é promover a consciência ambiental e incentivar a criatividade, mostrando que é possível dar uma nova vida a objetos que iriam para o lixo. Participe de grupos, troque experiências, encontre dicas práticas e contribua para um mundo mais sustentável.
+                    <br><br>
+                    Explore tutoriais, desafios e conteúdos exclusivos para desenvolver suas habilidades em reciclagem e artesanato. No Recicla e Cria, cada usuário é parte fundamental de uma rede que valoriza o cuidado com o planeta e a inovação.
+                </p>
+                <p>
+                    Junte-se ao Recicla e Cria e comece hoje mesmo a transformar resíduos em novas possibilidades!
+                </p>
+                <h2>O que você encontra aqui?</h2>
+                <ul>
+                    <li><strong>Tutoriais passo a passo:</strong> Aprenda a criar objetos úteis e decorativos a partir de materiais recicláveis.</li>
+                    <li><strong>Desafios criativos:</strong> Participe de desafios mensais e compartilhe suas criações com a comunidade.</li>
+                    <li><strong>Fórum colaborativo:</strong> Tire dúvidas, troque ideias e inspire-se com projetos de outros usuários.</li>
+                    <li><strong>Dicas de sustentabilidade:</strong> Descubra práticas simples para reduzir o desperdício no dia a dia.</li>
+                    <li><strong>Eventos e oficinas:</strong> Fique por dentro de eventos, oficinas e campanhas de conscientização ambiental.</li>
+                </ul>
+                <h2>Por que participar?</h2>
+                <p>
+                    Ao fazer parte do Recicla e Cria, você contribui para a preservação do meio ambiente, desenvolve novas habilidades e faz parte de uma comunidade que acredita no poder da transformação. Seja você iniciante ou expert em reciclagem, sempre há algo novo para aprender e compartilhar.
+                </p>
+                <p>
+                    Venha fazer a diferença! Cadastre-se, compartilhe suas ideias e inspire outras pessoas a reciclar e criar um futuro melhor.
+                </p></ul>
+                
+                <a href="./Cadastro.php" class="butcontent">Saiba mais</a>
+                
+            </div>
+            
+            <div class="Contfundo">
+                <img src="./src/img/ReciclaECria.png" alt="Logo recicla e cria" class="imgFundo">
+            </div>
+
+        </main>
+        <div class="fundo"></div>
+    </div>
+</body>
+
+</html>
